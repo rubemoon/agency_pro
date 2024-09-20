@@ -1,0 +1,77 @@
+#hero {
+    background-color: var(--dark-color);
+    text-align: center;
+  }
+  
+  .container {
+    margin: 0 auto;
+    padding: 2rem 0;
+  }
+  
+  .desktop-only {
+    font-size: var(--fs-base);
+    font-weight: var(--fw-md);
+    color: var(--primary-color); /* Usando cor primária */
+    margin-bottom: var(--py-sm);
+  }
+  
+  h1 {
+    font-size: var(--fs-2xl);
+    font-weight: var(--fw-bold);
+    color: var(--text-color); /* Cor de texto principal */
+    margin-bottom: var(--py-base);
+  }
+  
+  p {
+    font-size: var(--fs-lg);
+    color: var(--second-text-color); /* Cor de texto secundário */
+    margin-bottom: var(--py-lg);
+  }
+  
+  /* Utilizando as classes existentes para os botões e flex */
+  .flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  button.primary {
+    background-color: var(--primary-color);
+    color: var(--light-text-color);
+    padding: var(--py-base) var(--px-lg);
+    border-radius: 0.5rem;
+  }
+  
+  button.primary:hover {
+    background-color: #4338ca; /* Customização adicional para hover */
+  }
+  
+  button.secondary {
+    background-color: transparent;
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+    padding: var(--py-base) var(--px-lg);
+    border-radius: 0.5rem;
+  }
+  
+  button.secondary:hover {
+    background-color: var(--primary-color);
+    color: var(--light-text-color);
+  }
+  
+  /* Estilos responsivos */
+  @media (max-width: 768px) {
+    h1 {
+      font-size: var(--fs-xl);
+    }
+  
+    p {
+      font-size: var(--fs-base);
+    }
+  
+    .desktop-only {
+      display: none;
+    }
+  }
+  
